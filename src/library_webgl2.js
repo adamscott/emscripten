@@ -111,6 +111,7 @@ var LibraryWebGL2 = {
     writeI53ToI64(data, GLctx.getBufferParameter(target, value));
   },
 
+  glGetBufferSubData__proxy: 'sync',
   glGetBufferSubData: (target, offset, size, data) => {
 #if GL_TRACK_ERRORS
     if (!data) {
